@@ -4,15 +4,135 @@
     <meta charset="UTF-8" />
     <title>About Caragua Woof</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <script type="module" crossorigin src="https://me.crg.tw/assets/index-Dfwfk5Gh.js"></script>
-    <link rel="stylesheet" crossorigin href="https://me.crg.tw/assets/index-CGStwIVm.css">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #525252;
+        }
+        #container {
+            max-width: 720px;
+            margin: auto;
+            height: 100%;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #main-area {
+            position: relative;
+            top: -12px;
+            padding: 24px;
+            padding-top: 0;
+            border: 4px #525252 solid;
+            border-radius: 16px;
+            background-color: #272727;
+            margin: -4px;
+            margin-bottom: -16px;
+        }
+        #profile-picture {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            border-radius: 16px 16px 0 0;
+            position: relative;
+            object-position: top;
+        }
+        .link {
+            height: 4rem;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            color: white;
+        }
+        .link-icon-holder {
+            font-size: 2rem;
+            line-height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .link-icon-holder > img {
+            filter: invert(100%);
+        }
+        .link-text-holder {            
+            line-height: 1.5rem;
+            display: flex; 
+            justify-content: center;
+            flex-direction: column;
+            padding: 8px 16px;
+            padding-left: 8px;
+        }
+        .link-text-main {
+            font-size: 1.2rem;
+        }
+        .link-text-sub {
+            font-size: 0.8rem;
+        }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="container">
+        <img id="profile-picture" src="https://r2.media.collies.dev/profile-caraguawoof.webp" />
+        <div id="main-area">
+            <h1 style="text-transform: uppercase; color: white;">
+                <div>
+                    caragua woof
+                    </div>
+                <div style="font-size: 0.8rem; padding-left: 2px;">
+                    aka &nbsp;小卡 / 大黃狗 / ca woof / カウ
+                </div>
+            </h1>
+            <div style="color: white; padding-left: 2px;">
+                Border collie here. 
+                I do random stuffs including web front/backend dev, 3d prints, badges, stickers and more. 
+                Can bark English, Spanish and Chinese. 
+                Currently living in Taiwan.
+            </div>
+            <h2 style="color: white">Where To Find Me</h2>
+            <a class="link" target="_blank" href="https://facebook.com/CaraguaWoof">
+                <div class="link-icon-holder">
+                    <img style="height: 32px; width: 32px;" src="https://unpkg.com/simple-icons@v14/icons/facebook.svg" />
+                </div>
+                <div class="link-text-holder">
+                    <div class="link-text-main">CaraguaWoof</div>
+                </div>
+            </a>
+            <a class="link" target="_blank" href="https://x.com/CaraguaWoof">
+                <div class="link-icon-holder">
+                    <img style="height: 32px; width: 32px;" src="https://unpkg.com/simple-icons@v14/icons/x.svg" />
+                </div>
+                <div class="link-text-holder">
+                    <div class="link-text-main">CaraguaWoof</div>
+                    <div class="link-text-sub">Beware of random R18 retweets</div>
+                </div>
+            </a>
+            <a class="link" target="_blank" href="https://plurk.com/CaraguaWoof">
+                <div class="link-icon-holder">
+                    <img style="height: 32px; width: 32px;" src="https://unpkg.com/simple-icons@v14/icons/plurk.svg" />
+                </div>
+                <div class="link-text-holder">
+                    <div class="link-text-main">CaraguaWoof</div>
+                </div>
+            </a>
+            <a class="link" target="_blank" href="https://bsky.app/profile/caragua.bsky.social">
+                <div class="link-icon-holder">
+                    <img style="height: 32px; width: 32px;" src="https://unpkg.com/simple-icons@v14/icons/bluesky.svg" />
+                </div>
+                <div class="link-text-holder">
+                    <div class="link-text-main">@caragua.bsky.social</div>
+                </div>
+            </a>
+        </div>
+    </div>
   </body>
 </html>
